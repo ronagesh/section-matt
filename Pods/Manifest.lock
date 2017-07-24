@@ -1,0 +1,18 @@
+PODS:
+  - Bolts/Tasks (1.8.4)
+  - IQKeyboardManagerSwift (4.0.8)
+  - Parse (1.14.2):
+    - Bolts/Tasks (~> 1.8)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - Parse
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
+  Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
+
+PODFILE CHECKSUM: d1429cca32f463f8a9a22e4aea2904ab4f743471
+
+COCOAPODS: 1.0.1
