@@ -68,24 +68,20 @@ class ExerciseViewController: UIViewController {
         }
     }
 
-    @IBAction func resetPressed() {
-        completed = [Int]()
-        nextButton.isEnabled = true
-        setupDeck()
-        startTime = Date().timeIntervalSinceReferenceDate
-        elapsedTime = 0.0
-    }
-    
+
     @IBAction func pausePressed() {
         if (!isPaused) {
             timer.invalidate()
             pauseButton.setTitle("Resume", for: UIControlState.normal)
             isPaused = true
+            nextButton.isEnabled = false
         } else {
             startTime = Date().timeIntervalSinceReferenceDate - elapsedTime
             runTimer()
             pauseButton.setTitle("Pause", for: UIControlState.normal)
             isPaused = false
+            nextButton.isEnabled = true
+
         }
     }
     @IBAction func nextPressed() {
@@ -113,6 +109,7 @@ class ExerciseViewController: UIViewController {
             
             timer.invalidate()
             
+            
             return
         }
         
@@ -121,7 +118,13 @@ class ExerciseViewController: UIViewController {
             nextIndex = Int(arc4random_uniform(52))
         }
         currentExercise.text = exerciseFromIndex(index: nextIndex)
-        numCardsRemaining.text = String(DECK_SIZE - completed.count) + " Exercises Remaining"
+        let cardsRemaining = DECK_SIZE - completed.count
+        if cardsRemaining == 1 {
+            nextButton.setTitle("Finish", for: UIControlState.normal)
+            numCardsRemaining.text = String(cardsRemaining) + " Exercise Remaining"
+        } else {
+            numCardsRemaining.text = String(cardsRemaining) + " Exercises Remaining"
+        }
         completed.append(nextIndex)
     }
     
