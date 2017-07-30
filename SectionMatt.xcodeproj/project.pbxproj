@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02FC97E6ED6F22F83CDC8244 /* Pods_SectionMatt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFFBED0B2D956B6E9BEC12F /* Pods_SectionMatt.framework */; };
+		1C1B26BA1F2D67750026247B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B26B91F2D67750026247B /* LoginViewController.swift */; };
 		1C3519611F0B661600952C98 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3519601F0B661600952C98 /* HistoryTableViewCell.swift */; };
 		1C3519631F0B675200952C98 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3519621F0B675200952C98 /* HistoryViewController.swift */; };
 		1C3519651F0B733400952C98 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3519641F0B733400952C98 /* Workout.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		0BBA74E130A161DD05D33B8B /* Pods-SectionMatt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SectionMatt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SectionMatt/Pods-SectionMatt.debug.xcconfig"; sourceTree = "<group>"; };
+		1C1B26B91F2D67750026247B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C3519601F0B661600952C98 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		1C3519621F0B675200952C98 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		1C3519641F0B733400952C98 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				1CA3D2D01F2468C9007058F2 /* Billabong.ttf */,
 				1CF84FAE1EECC7B9002F6036 /* ExerciseViewController.swift */,
 				1CF84FA01EECB1D7002F6036 /* Main.storyboard */,
+				1C1B26B91F2D67750026247B /* LoginViewController.swift */,
 				1CA3D2D21F247A5C007058F2 /* LaunchScreen.storyboard */,
 				1C3519641F0B733400952C98 /* Workout.swift */,
 				1C3519601F0B661600952C98 /* HistoryTableViewCell.swift */,
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1B26BA1F2D67750026247B /* LoginViewController.swift in Sources */,
 				1CF84FB11EECD455002F6036 /* StartViewController.swift in Sources */,
 				1CF84FAF1EECC7B9002F6036 /* ExerciseViewController.swift in Sources */,
 				1C3519611F0B661600952C98 /* HistoryTableViewCell.swift in Sources */,

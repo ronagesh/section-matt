@@ -8,4 +8,5 @@ target 'SectionMatt' do
   # Pods for SectionMatt
   pod 'Parse'
   pod 'IQKeyboardManagerSwift'
+  pod 'ParseFacebookUtilsV4'
 end

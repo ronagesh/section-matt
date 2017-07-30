@@ -9,6 +9,7 @@
 import UIKit
 import IQKeyboardManagerSwift
 import Parse
+import ParseFacebookUtilsV4
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,9 +27,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             $0.server = "https://section-matt.herokuapp.com/parse"
         }
         Parse.initialize(with: configuration)
+        PFFacebookUtils.initializeFacebook(applicationLaunchOptions: launchOptions)
+        PFUser.enableAutomaticUser()
         
         return true
     }
+    
+    //Handle FB callback
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        let handledFBURL = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
+        
+        if (!handledFBURL) {
+            print("Could not parse FB URL")
+        }
+        
+        return true
+    }
+    
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uDP-FE-6au">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZU6-Ev-aNl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,11 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Billabong.ttf">
+            <string>Billabong</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Start-->
         <scene sceneID="tne-QT-ifu">
@@ -236,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQ3-ql-a5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2746.4000000000001" y="35.532233883058474"/>
+            <point key="canvasLocation" x="2748" y="44"/>
         </scene>
         <!--Home-->
         <scene sceneID="dH4-Xx-Hel">
@@ -244,7 +249,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5T2-lZ-4NV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home_icon" id="OMC-Sj-g2z"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bHb-6n-ILh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bHb-6n-ILh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -256,6 +261,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWz-sz-YO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="964" y="43.628185907046479"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="3ER-hZ-6Cp">
+            <objects>
+                <viewController id="ZU6-Ev-aNl" customClass="LoginViewController" customModule="SectionMatt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="37j-f3-IEY"/>
+                        <viewControllerLayoutGuide type="bottom" id="C4v-RF-emU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YgP-7I-W0z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="gCS-dp-XXb">
+                                <rect key="frame" x="123" y="28" width="128" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi2-sI-9ln">
+                                <rect key="frame" x="43.5" y="302.5" width="288" height="62"/>
+                                <state key="normal" image="fb_login_button"/>
+                                <connections>
+                                    <action selector="fbButtonPressed" destination="ZU6-Ev-aNl" eventType="touchUpInside" id="v7B-gs-Hxh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Matt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpx-3I-gmd">
+                                <rect key="frame" x="110" y="164" width="155.5" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Billabong" family="Billabong" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0035712926179999999" green="0.71411687140000002" blue="0.94332528110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cpx-3I-gmd" firstAttribute="top" secondItem="gCS-dp-XXb" secondAttribute="bottom" constant="8" id="6RE-Ex-uVe"/>
+                            <constraint firstItem="cpx-3I-gmd" firstAttribute="centerX" secondItem="YgP-7I-W0z" secondAttribute="centerX" id="ZrF-ne-T8H"/>
+                            <constraint firstItem="Vi2-sI-9ln" firstAttribute="centerY" secondItem="YgP-7I-W0z" secondAttribute="centerY" id="hGe-ea-Sah"/>
+                            <constraint firstItem="gCS-dp-XXb" firstAttribute="top" secondItem="37j-f3-IEY" secondAttribute="bottom" constant="8" id="l5K-fq-17P"/>
+                            <constraint firstItem="gCS-dp-XXb" firstAttribute="centerX" secondItem="YgP-7I-W0z" secondAttribute="centerX" id="tfJ-jF-UDK"/>
+                            <constraint firstItem="Vi2-sI-9ln" firstAttribute="centerX" secondItem="YgP-7I-W0z" secondAttribute="centerX" id="wVb-Kt-xQd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="uDP-FE-6au" kind="show" identifier="loginToStart" id="WDe-NW-XJF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0K-vW-MEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-898" y="44"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tYk-eo-XGh">
@@ -369,7 +421,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nWp-NM-tod" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="history" id="wT0-X5-W1f"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ehg-Ut-mCL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ehg-Ut-mCL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.68235294120000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -385,7 +437,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fb_login_button" width="288" height="62"/>
         <image name="home_icon" width="28" height="27"/>
+        <image name="logo-white" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zGq-Aa-10n"/>
