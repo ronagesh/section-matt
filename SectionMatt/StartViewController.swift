@@ -36,7 +36,7 @@ class StartViewController: UIViewController, UITextFieldDelegate {
         self.navigationController?.navigationBar.barTintColor = UIColor(red:0.00, green:0.68, blue:0.94, alpha:1.0)
         self.navigationController?.navigationBar.titleTextAttributes = attrs
         
-        for family in UIFont.familyNames
+        /*for family in UIFont.familyNames
         {
             print("Family: \(family)")
             
@@ -44,7 +44,7 @@ class StartViewController: UIViewController, UITextFieldDelegate {
             {
                 print("Name: \(name)")
             }
-        }
+        }*/
 
     }
 

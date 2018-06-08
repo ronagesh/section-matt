@@ -28,7 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         Parse.initialize(with: configuration)
         PFFacebookUtils.initializeFacebook(applicationLaunchOptions: launchOptions)
-        PFUser.enableAutomaticUser()
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main);
+        let currentUser = PFUser.current()
+        if currentUser != nil {
+            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "startVC");
+        }
+
         
         return true
     }

@@ -14,6 +14,8 @@
 		1C3519651F0B733400952C98 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3519641F0B733400952C98 /* Workout.swift */; };
 		1CA3D2D11F2468C9007058F2 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CA3D2D01F2468C9007058F2 /* Billabong.ttf */; };
 		1CA3D2D31F247A5C007058F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA3D2D21F247A5C007058F2 /* LaunchScreen.storyboard */; };
+		1CF1435C1FA5B24C0093AD18 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1435B1FA5B24C0093AD18 /* LeaderboardViewController.swift */; };
+		1CF5FD8E20C3331800C60C41 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FD8D20C3331800C60C41 /* HomeViewController.swift */; };
 		1CF84F9D1EECB1D7002F6036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF84F9C1EECB1D7002F6036 /* AppDelegate.swift */; };
 		1CF84FA21EECB1D7002F6036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF84FA01EECB1D7002F6036 /* Main.storyboard */; };
 		1CF84FA41EECB1D7002F6036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF84FA31EECB1D7002F6036 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		1C3519641F0B733400952C98 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		1CA3D2D01F2468C9007058F2 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Billabong.ttf; path = ../../../Downloads/Billabong.ttf; sourceTree = "<group>"; };
 		1CA3D2D21F247A5C007058F2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CF1435B1FA5B24C0093AD18 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		1CF5FD8D20C3331800C60C41 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1CF84F991EECB1D7002F6036 /* SectionMatt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectionMatt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF84F9C1EECB1D7002F6036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CF84FA11EECB1D7002F6036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,12 +81,14 @@
 				1CA3D2D01F2468C9007058F2 /* Billabong.ttf */,
 				1CF84FAE1EECC7B9002F6036 /* ExerciseViewController.swift */,
 				1CF84FA01EECB1D7002F6036 /* Main.storyboard */,
+				1CF5FD8D20C3331800C60C41 /* HomeViewController.swift */,
 				1C1B26B91F2D67750026247B /* LoginViewController.swift */,
 				1CA3D2D21F247A5C007058F2 /* LaunchScreen.storyboard */,
 				1C3519641F0B733400952C98 /* Workout.swift */,
 				1C3519601F0B661600952C98 /* HistoryTableViewCell.swift */,
 				1C3519621F0B675200952C98 /* HistoryViewController.swift */,
 				1CF84FB01EECD455002F6036 /* StartViewController.swift */,
+				1CF1435B1FA5B24C0093AD18 /* LeaderboardViewController.swift */,
 				1CF84FA31EECB1D7002F6036 /* Assets.xcassets */,
 				1CF84FA81EECB1D7002F6036 /* Info.plist */,
 			);
@@ -236,7 +242,9 @@
 				1CF84FAF1EECC7B9002F6036 /* ExerciseViewController.swift in Sources */,
 				1C3519611F0B661600952C98 /* HistoryTableViewCell.swift in Sources */,
 				1C3519631F0B675200952C98 /* HistoryViewController.swift in Sources */,
+				1CF5FD8E20C3331800C60C41 /* HomeViewController.swift in Sources */,
 				1CF84F9D1EECB1D7002F6036 /* AppDelegate.swift in Sources */,
+				1CF1435C1FA5B24C0093AD18 /* LeaderboardViewController.swift in Sources */,
 				1C3519651F0B733400952C98 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
